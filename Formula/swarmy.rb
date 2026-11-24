@@ -1,7 +1,7 @@
 # Homebrew formula for the tap koorchik/homebrew-tap (`brew install koorchik/tap/swarmy`).
-# This file is the source of truth: the release workflow fills in 0.2.1, https://github.com/koorchik/swarmy and the
-# @SHA256_*@ checksums from the release's SHA256SUMS (`tools/dist.sh formula`) and commits the
-# result to the tap as Formula/swarmy.rb. Do not edit the tap's copy by hand.
+# This file is the source of truth: the release workflow fills in its placeholders (the version,
+# the repository and the checksums from the release's SHA256SUMS, `tools/dist.sh formula`) and
+# commits the result to the tap as Formula/swarmy.rb. Do not edit the tap's copy by hand.
 class Swarmy < Formula
   desc "Live swarm, spend and limits of Claude Code, Antigravity and Codex agents"
   homepage "https://github.com/koorchik/swarmy"
@@ -17,13 +17,13 @@ class Swarmy < Formula
   # builds for Linux.
   if OS.mac?
     url "https://github.com/koorchik/swarmy/releases/download/v0.2.1/swarmy-0.2.1-universal-apple-darwin.tar.gz"
-    sha256 "53345dcaa3248c3b301c4736e07a458f6efe0708a2f5b1b22a806de4e289baff"
+    sha256 "a4c430980441aabd9696cc5697b617f977edc0051ef57e81e27beab087d80ecf"
   elsif Hardware::CPU.arm?
     url "https://github.com/koorchik/swarmy/releases/download/v0.2.1/swarmy-0.2.1-aarch64-unknown-linux-musl.tar.gz"
-    sha256 "54cf88825b06e2167cf6b0fa011f9cbd7788825b90bc657272d517592b0527c4"
+    sha256 "38eff1d3700aa1d244387f1f8e19d730def1594a95ae9c87acd173a3d324b169"
   else
     url "https://github.com/koorchik/swarmy/releases/download/v0.2.1/swarmy-0.2.1-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "15380ce2fa812c2bc0cdb55f62e6064e2e2bb6b84768e92ee0a1c14699af5179"
+    sha256 "459a7dd3fa2f1ce6abc70d53d94c2c53396da4441b95450ae2cccacc3502497b"
   end
 
   def install
