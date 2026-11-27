@@ -16,14 +16,14 @@ class Swarmy < Formula
   # Prebuilt static binaries: one universal binary for macOS (Apple silicon and Intel), musl
   # builds for Linux.
   if OS.mac?
-    url "https://github.com/koorchik/swarmy/releases/download/v0.2.7/swarmy-0.2.7-universal-apple-darwin.tar.gz"
-    sha256 "42880bcf4ffecd106fee74605d24b9366bebebf8e3b53c23c0fac66dced772c5"
+    url "https://github.com/koorchik/swarmy/releases/download/v0.2.8/swarmy-0.2.8-universal-apple-darwin.tar.gz"
+    sha256 "bcce326b46cac28cfd06f8f1bffb7aeba65d141f188d3e3563d1357e15c30d9d"
   elsif Hardware::CPU.arm?
-    url "https://github.com/koorchik/swarmy/releases/download/v0.2.7/swarmy-0.2.7-aarch64-unknown-linux-musl.tar.gz"
-    sha256 "3a5c0131b87e882ad5ef50e3fe0232ed0dc153528ddebb5efda6bedec14bedb5"
+    url "https://github.com/koorchik/swarmy/releases/download/v0.2.8/swarmy-0.2.8-aarch64-unknown-linux-musl.tar.gz"
+    sha256 "374d4c7b533469e884d79709d7f36f481c88731265dd929fa1d8d4aa1b966d3c"
   else
-    url "https://github.com/koorchik/swarmy/releases/download/v0.2.7/swarmy-0.2.7-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "d3ad61cbb7526026206979dda17d3ca95ea860ec62093148716127bd223bb156"
+    url "https://github.com/koorchik/swarmy/releases/download/v0.2.8/swarmy-0.2.8-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "b8360c5664596e712f7c6a6d27194731ede264801c39d52a0036e4b966cdd7fd"
   end
 
   def install
